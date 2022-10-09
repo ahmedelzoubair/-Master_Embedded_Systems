@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int x=1;
+	int y=0;
+	int studnum;
+	float avg,degree;
+	float sum=0;
+
+	while(x<9)
+	{
+		y=y+x;
+		x++;
+	}
+	printf("the sum = %d \n",y);
+
+	x=1;
+	printf("enter studnum: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&studnum);
+
+	while(x<=studnum)
+	{
+		printf("enter degree stud %d: ",x);
+		fflush(stdin); fflush(stdout);
+		scanf("%f",&degree);
+		sum=sum+degree;
+		x++;
+	}
+	avg=sum/studnum;
+	printf("the avg is %f",avg);
