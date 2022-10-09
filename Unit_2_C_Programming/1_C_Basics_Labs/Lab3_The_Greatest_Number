@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+  
+  int firstNum;
+	int sacandNum ;
+	int thierdNum;
+
+	printf ("plz iner 1st num \n");
+	fflush(stdin); fflush(stdout);
+	scanf ("%d",&firstNum);
+
+	printf ("plz iner 2nd num \n");
+	fflush(stdin); fflush(stdout);
+	scanf ("%d",&sacandNum);
+
+	printf ("plz iner 3rd num \n");
+	fflush(stdin); fflush(stdout);
+	scanf ("%d",&thierdNum);
+
+	if(firstNum > sacandNum && firstNum >thierdNum )
+	{
+		printf ("the greates is 1st num" );
+	}
+	else if(sacandNum > firstNum && sacandNum >thierdNum )
+	{
+		printf ("the greates is 2nd num ");
+	}
+	else
+	{
+		printf ("the greates is 3rd num " );
+	}
