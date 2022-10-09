@@ -37,3 +37,17 @@ int x;
 	avg = sum / studNum;
 	printf("Avg stud degree is : %f ",avg);
 	//printf("Avg stud degree is : %f ",sum/studNum);
+	
+///////////////////////////////////////////
+	int x;
+	int y;
+
+	for(y=0;y<=9;y++)
+	{
+		for(x=y;x<=9;x++)
+		{
+			printf("%d ",x);
+		}
+		printf("\n");
+	}
+}
