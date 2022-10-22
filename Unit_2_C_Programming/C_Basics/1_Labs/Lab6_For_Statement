@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+int x;
+	int y;
+
+	for(x=0;x<=9;++x);
+	{
+		printf("%d : Hellow World \n",x);
+	}
+////////////////////////////////////////////
+	for(y=0,x=1;x<100;x++)
+	{
+		//y=y+x;
+		y += x;
+	}
+	printf("summation of values between (1 and 99) is %d",y);
+///////////////////////////////////////////
+
+	int studNum;
+	int degree;
+	int sum=0;
+	float avg;
+
+	printf("plz inter num of students \n");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&studNum);
+
+	for(int x=1;x<=studNum;x++)
+	{
+		printf("Enter student (%d) degree :",x);
+		fflush(stdin); fflush(stdout);
+		scanf("%d",&degree);
+		sum= sum+degree;
+	}
+	avg = sum / studNum;
+	printf("Avg stud degree is : %f ",avg);
+	//printf("Avg stud degree is : %f ",sum/studNum);
+	
+///////////////////////////////////////////
+	int x;
+	int y;
+
+	for(y=0;y<=9;y++)
+	{
+		for(x=y;x<=9;x++)
+		{
+			printf("%d ",x);
+		}
+		printf("\n");
+	}
+}

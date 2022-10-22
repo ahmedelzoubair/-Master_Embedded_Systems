@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float firstNum,sacandNum,thierdNum;
+	printf("Enter three numbers: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&firstNum);
+	scanf("%f",&sacandNum);
+	scanf("%f",&thierdNum);
+
+	if(firstNum > sacandNum && firstNum >thierdNum )
+		{
+			printf ("Largest number = %f", firstNum);
+		}
+		else if(sacandNum > firstNum && sacandNum >thierdNum )
+		{
+			printf ("Largest number = %f", sacandNum);
+		}
+		else
+		{
+			printf ("Largest number = %f", thierdNum);
+		}
+
+}
+/////////////////////////////////////////////////////////////////
+	if(firstNum > sacandNum)
+		{
+			if(firstNum>thierdNum)
+			{
+				printf ("Largest number = %f", firstNum);
+			}
+			else
+			{
+				printf ("Largest number = %f", thierdNum);
+			}
+		}else //(sacandNum > firstNum)
+		{
+			if(sacandNum > thierdNum)
+			{
+				printf ("Largest number = %f", sacandNum);
+			}
+			else
+			{
+				printf ("Largest number = %f", thierdNum);
+			}
+		}
+/////////////////////////////////////////////////////////////////
+	float Num1st,Num2nd,Num3rd,largest;
+	printf("Enter three numbers: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&Num1st);
+	scanf("%f",&Num2nd);
+	scanf("%f",&Num3rd);
+
+	largest=(Num1st>Num2nd)?Num1st:Num2nd;
+	largest=(largest>Num3rd)?largest:Num3rd;
+
+	printf("Largest number = %f",largest);

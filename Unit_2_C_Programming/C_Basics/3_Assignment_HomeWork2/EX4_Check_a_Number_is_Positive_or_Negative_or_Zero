@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	float Num1st;
+	printf("Enter a number: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&Num1st);
+
+	if(Num1st>0)
+		printf("%f is positive.",Num1st);
+	else if(Num1st<0)
+		printf("%f is negative.",Num1st);
+	else
+		printf("You entered zero");
+}
