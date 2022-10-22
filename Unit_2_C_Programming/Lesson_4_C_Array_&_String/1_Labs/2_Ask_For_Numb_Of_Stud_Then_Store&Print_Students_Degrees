@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  int a;
+	printf("Insert number of students");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&a);
+	float deg [a];
+	int x=0;
+	int i=1;
+
+	for(x=0;x<a;x++,i++)
+	{
+		printf("Enter student %d degree : ",i);
+		fflush(stdin); fflush(stdout);
+		scanf("%f",&deg[x]);
+	}
+
+	i=1;
+	x=0;
+	for(x=0;x<a;x++,i++)
+	{
+		printf("Student %d degree is %f \n",i,deg[x]);
+	}
