@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char text[100]={'h','e','l','l','o',0};
+	printf("%s \r\n",text);
+}
