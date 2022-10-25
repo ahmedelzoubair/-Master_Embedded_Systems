@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float mat[3][3];
+	float mat2[3][3];
+
+	for(int x=0;x<3;x++)
+	{
+		for(int y=0;y<3;y++)
+		{
+			printf("Enter the item (%d,%d) :",x,y);
+			fflush(stdin); fflush(stdout);
+			scanf("%f",&mat[x][y]);
+		}
+	}
+
+	printf("The matrix is \n");
+
+	for(int x=0;x<3;x++)
+	{
+		for(int y=0;y<3;y++)
+		{
+			printf("%f ",mat[x][y]);
+
+		}
+		printf("\n \n");
+	}
+
+	printf("The matrix is \n");
+
+	for(int x=0;x<3;x++)
+	{
+		for(int y=0;y<3;y++)
+		{
+			mat2[x][y]=mat[y][x];
+		}
+	}
+
+	for(int x=0;x<3;x++)
+	{
+		for(int y=0;y<3;y++)
+		{
+			printf("%f ",mat2[x][y]);
+		}
+		printf("\n");
+	}
+
+
+}
